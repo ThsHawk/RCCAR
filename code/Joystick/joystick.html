@@ -6,7 +6,7 @@
     </title>
     <meta name="viewport" content="user-scalable=no">
   </head>
-  <body>    
+  <body>
     <div class="container">
       <button id="RCCAR" type="button" onClick="onOff()">RCCAR</button>
       <canvas id="canvas" name="game"></canvas>
@@ -23,7 +23,7 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   color:rgb(128, 128, 128);
   font-size: xx-large;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -38,23 +38,24 @@ button{
 .container{
   aling-self: center;
   place-items: center;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   text-align: center;
   display: grid;
 }
 </style>
 <script>
-function send(x,y){
+let connection = new WebSocket("ws://" + "192.168.4.1" + ":81/");
+
+function sendPos(x,y,rccar){
   x = Math.round((100 * x)/(width/4));
   y = Math.round((100 * y)/(width/4));
   var x_pos = document.getElementById("x_coordinate");
   x_pos.innerText = x >= 0 ? String("> " + x + "%") : String("< " + x * -1 + "%");
   var y_pos = document.getElementById("y_coordinate");
   y_pos.innerText = y <= 0 ? String("A " + y * -1 + "%") : String("V " + y + "%");
-  var data = {"x":x,"y":y};
-  data = JSON.stringify(data);
-  console.log(data);
+  connection.send(String(x + "/" + y + "/" + (bool ? 1 : 0)));
+  console.log(String(x + "/" + y + "/" + (bool ? 1 : 0)));
 }
 
 var canvas, ctx, bool;
@@ -62,8 +63,8 @@ var canvas, ctx, bool;
 window.addEventListener('load', () => {
 
   canvas = document.getElementById('canvas');
-  ctx = canvas.getContext('2d');          
-  resize(); 
+  ctx = canvas.getContext('2d');
+  resize();
 
   document.addEventListener('mousedown', startDrawing);
   document.addEventListener('mouseup', stopDrawing);
@@ -75,7 +76,7 @@ window.addEventListener('load', () => {
   document.addEventListener('touchmove', Draw);
   window.addEventListener('resize', resize);
 
-  send(0,0);
+  sendPos(0,0);
 });
 
 var width, height, radius, x_orig, y_orig;
@@ -148,7 +149,7 @@ function stopDrawing() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   background();
   joystick(width / 2, height / 2);
-  send(0,0);
+  sendPos(0,0);
 }
 
 function Draw(event) {
@@ -177,7 +178,7 @@ function Draw(event) {
     var x_relative = Math.round(x - x_orig);
     var y_relative = Math.round(y - y_orig);
 
-    send( x_relative,y_relative);
+    sendPos( x_relative,y_relative);
   }
 }
 
@@ -185,9 +186,10 @@ function onOff(){
   var btn = document.getElementById("RCCAR");
   var obj = window.getComputedStyle(btn, null);
   var color = obj.getPropertyValue("color");
-  
+
   bool = String(color) === "rgb(255, 255, 255)" ? true : false;
   btn.style.color = bool ? "rgb(230, 255, 80)" : "rgb(255, 255, 255)";
-  
+
+  sendPos(0,0);
 }
 </script>
