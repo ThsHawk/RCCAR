@@ -7,7 +7,7 @@ LINKS2004; arduinoWebSockets. **Github**. 2015. Disponível em: https://github.c
 
 IGRR; ESP8266WEBSERVER EXAMPLE. **ESP8266 Community Forum**. 2015. Disponível em: https://www.esp8266.com/viewtopic.php?t=2153 Acesso em: 06/06/2022.
 
-WebSocket. **javascript.info**. 2022. Disponível em: https://javascript.info/websocket Acesso em: 06/06/2022.
+WebSocket. **javascript.info**. 2022. Disponível em: https://javascript.info/websocket Acesso em: 07/06/2022.
 
 MISCHIANTI, Renzo; PWebSocket on Arduino, esp8266 and esp32: client – 1. **RENZO MISCHIANTI**. 2020. Disponível em: https://www.mischianti.org/2020/12/07/websocket-on-arduino-esp8266-and-esp32-client-1/ Acesso em: 07/06/2022
 

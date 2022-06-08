@@ -14,3 +14,5 @@ JavaScript Math.round(). **w3schools**. Disponível em: https://www.w3schools.co
 HTML Canvas Reference. **w3schools**. Disponível em: https://www.w3schools.com/tags/ref_canvas.asp Acesso em: 05/06/2022.
 
 How to center a button in CSS?. **w3cschools**. Disponível em: https://w3cschoool.com/how-to-center-a-button-in-css Acesso em: 04/06/2022.
+
+WebSocket. **javascript.info**. 2022. Disponível em: https://javascript.info/websocket Acesso em: 07/06/2022.
