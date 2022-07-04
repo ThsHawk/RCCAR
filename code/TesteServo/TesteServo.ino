@@ -1,3 +1,10 @@
+/*
+ * @file: TesteServo.ino
+ * @date: June 24 2022
+ * @author: "Copy from Internet"
+ * @brief: Control Servo through Serial
+ */
+
 #include <Servo.h>
 
 Servo servo;
@@ -6,24 +13,24 @@ const unsigned int MAX_MESSAGE_LENGTH = 12;
 
 void setup() {
 
-  servo.attach(D4, 500, 2400);; //D4 
+  servo.attach(D4, 500, 2400); //D4
   Serial.begin(115200);
 
 }
 
 void loop() {
 
-  
-  
+
+
   while (Serial.available() > 0)
   {
     //Create a place to hold the incoming message
     static char message[MAX_MESSAGE_LENGTH];
     static unsigned int message_pos = 0;
-    
+
     //Read the next available byte in the serial receive buffer
     char inByte = Serial.read();
-    
+
     //Message coming in (check not terminating character) and guard for over message size
     if ( inByte != '\n' && (message_pos < MAX_MESSAGE_LENGTH - 1) )
     {
@@ -36,7 +43,7 @@ void loop() {
       {
       //Add null character to string
       message[message_pos] = '\0';
-      
+
       //Print the message (or do other things)
       Serial.println(message);
       angle = atoi(message);
