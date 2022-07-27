@@ -16,4 +16,4 @@ Este é mais um projeto de carrinho de controle remoto, terá um tempo de execu�
 Este projeto tem como justificativa desenvolver as abilidades pessoais do autor, como: Gerenciamento de projetos, Git, Eletrônica e Desenvolvimento de Software.
 
 ## Cronograma
-![Image](./images/Cronograma.jpg)
+![Image](./media/Cronograma.jpg)

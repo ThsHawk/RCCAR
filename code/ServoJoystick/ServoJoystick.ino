@@ -33,6 +33,8 @@ void control(char * data){
   char *pLights = &pThrust[nT + 1];
 
   int angle = atoi(pAngle);
+  angle = angle >= 0 ? 40 + (angle / 2.5) : 40 - ((angle * -1) / 2.5);
+  
   int thrust = atoi(pThrust);
   bool lights = atoi(pLights);
   
@@ -75,6 +77,7 @@ const char *password = "senha_dificil";
 void setup(void){
 
   servo.attach(D4, 500, 2400); //D4
+  servo.write(40);
   
   Serial.begin(115200);
   Serial.print("\n");
