@@ -1,0 +1,261 @@
+{
+  "uuid": "d8776a7b64af82cc6a8debfa82031dba",
+  "path": "Offline/RCCAR",
+  "name": "RCCAR",
+  "content": "Mais um projeto de carrinho de controle remoto.",
+  "created_at": "2022-08-04 13:02:19",
+  "updated_at": "2022-08-10 00:16:57",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "992f7a79244d66e8da3e79a74f6900a1",
+      "title": "RCCAR",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "23125176829042309097ed89c6ae6bd5": 1,
+        "bbc185efabfa4bf3b17076cfb671e693": 1,
+        "1fac5ab882b3484587afc44681ec811e": 1,
+        "6cd4f59188894c7f9645ee03bb033b93": 8,
+        "908ced202529416bac1203a9b300d842": 1,
+        "58811278b5314d72a2e688e9aff2d59f": 2,
+        "3ec77201bbcd4ecd8722658d581a4e60": 2,
+        "a7291ceaee5442a999df26c55c7e675d": 1,
+        "8cb0931e7aee4571ab281a4f2e7b6e80": 1,
+        "65b1ae295679465fabfb76c1fc7cc7e6": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "47uF",
+          2,
+          "CAP-TH_BD6.3-P2.50-D0.5-FD",
+          "C1,C2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C2826425",
+            "BOM_Manufacturer": "AISHI(艾华集团)",
+            "BOM_Manufacturer Part": "ERR1VM470E11OT",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "64a7f92837bb4510988b60872b0cfbf5",
+            "uuid": "58811278b5314d72a2e688e9aff2d59f"
+          }
+        ],
+        [
+          "HDR-F-2.54_1x2",
+          2,
+          "HDR-F-2.54_1X2",
+          "H1,H3",
+          {
+            "BOM_Supplier Part": "C49661",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "36b1306a115341f4b4d9407fb34974e0",
+            "uuid": "3ec77201bbcd4ecd8722658d581a4e60"
+          }
+        ],
+        [
+          "HDR-F-2.54_1x5",
+          1,
+          "HDR-F-2.54_1X5",
+          "H2",
+          {
+            "BOM_Supplier Part": "C50950",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "4bb67b2ac49a4595b3ed10b792fcbebb",
+            "uuid": "65b1ae295679465fabfb76c1fc7cc7e6"
+          }
+        ],
+        [
+          "HDR-F-2.54_1x3",
+          1,
+          "HDR-F-2.54_1X3",
+          "H4",
+          {
+            "BOM_Supplier Part": "C146690",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "f83673d09e13450d934ca6be4be5af8f",
+            "uuid": "a7291ceaee5442a999df26c55c7e675d"
+          }
+        ],
+        [
+          "CONN-TH_2P-P5.00",
+          1,
+          "CONN-TH_2P-P5.00",
+          "P1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "be1b3456245c4373bfecde52b7e1b1d6",
+            "uuid": "8cb0931e7aee4571ab281a4f2e7b6e80"
+          }
+        ],
+        [
+          "STC945 NA",
+          1,
+          "TO-92-3_L4.8-W3.7-P2.54-R",
+          "Q1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C358546",
+            "BOM_Manufacturer": "Foshan Blue Rocket Elec",
+            "BOM_Manufacturer Part": "2SC2235-Y",
+            "puuid": "d759540c89844d9986051022192fcef6",
+            "uuid": "1fac5ab882b3484587afc44681ec811e"
+          }
+        ],
+        [
+          "220Ω",
+          1,
+          "RES-TH_BD2.3-L3.7-P7.70-D0.9",
+          "R1",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "13ad1e2079144cfeaefa6d40bf57e79e",
+            "uuid": "6cd4f59188894c7f9645ee03bb033b93"
+          }
+        ],
+        [
+          "1Ω",
+          2,
+          "RES-TH_BD2.3-L3.7-P7.70-D0.9",
+          "R2,R4",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "13ad1e2079144cfeaefa6d40bf57e79e",
+            "uuid": "6cd4f59188894c7f9645ee03bb033b93"
+          }
+        ],
+        [
+          "30KΩ",
+          1,
+          "R0805",
+          "R3",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "BOM_Manufacturer": "",
+            "puuid": "b60f399a7a7e41848b2be1eb49c79141",
+            "uuid": "6cd4f59188894c7f9645ee03bb033b93"
+          }
+        ],
+        [
+          "10kΩ",
+          4,
+          "RES-TH_BD2.3-L3.7-P7.70-D0.9",
+          "R5,R6,R7,R8",
+          {
+            "BOM_Supplier Part": "",
+            "BOM_Supplier": "",
+            "BOM_Manufacturer Part": "",
+            "puuid": "13ad1e2079144cfeaefa6d40bf57e79e",
+            "uuid": "6cd4f59188894c7f9645ee03bb033b93"
+          }
+        ],
+        [
+          "ESP-07",
+          1,
+          "WIFIM-SMD_ESP-07",
+          "U1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "Ai-Thinker",
+            "BOM_Manufacturer Part": "ESP-07",
+            "BOM_Supplier Part": "C82894",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "189998ad7d3240d8bdf98e1192cc1003",
+            "uuid": "23125176829042309097ed89c6ae6bd5"
+          }
+        ],
+        [
+          "DRV8871DDA",
+          1,
+          "POWERPAD-SO-8_L4.9-W3.9-P1.27-LS6.0-BL-EP",
+          "U2",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C1556867",
+            "BOM_Manufacturer": "TI(德州仪器)",
+            "BOM_Manufacturer Part": "DRV8871DDA",
+            "puuid": "ebe4f0fa8722453ca1294bacc7302acc",
+            "uuid": "bbc185efabfa4bf3b17076cfb671e693"
+          }
+        ],
+        [
+          "AMS1117-3.3V",
+          1,
+          "SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR",
+          "U3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C2688239",
+            "BOM_Manufacturer": "WPMtek(维攀微)",
+            "BOM_Manufacturer Part": "AMS1117-3.3V",
+            "BOM_JLCPCB Part Class": "Extended Part",
+            "puuid": "09952c2799c54b76904e264324ada8f3",
+            "uuid": "908ced202529416bac1203a9b300d842"
+          }
+        ]
+      ],
+      "updateTime": 1660095485,
+      "createTime": 1659628940,
+      "histories": [],
+      "created_at": "2022-08-04 13:02:20",
+      "updated_at": "2022-08-09 22:38:05"
+    },
+    {
+      "uuid": "14a1fa0cb41ee939ebcf5c646cbc265f",
+      "puuid": "d8776a7b64af82cc6a8debfa82031dba",
+      "title": "PCB_RCCAR",
+      "filename": "PCB_RCCAR.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "b60f399a7a7e41848b2be1eb49c79141": 1,
+        "64a7f92837bb4510988b60872b0cfbf5": 2,
+        "36b1306a115341f4b4d9407fb34974e0": 2,
+        "4bb67b2ac49a4595b3ed10b792fcbebb": 1,
+        "f83673d09e13450d934ca6be4be5af8f": 1,
+        "be1b3456245c4373bfecde52b7e1b1d6": 1,
+        "d759540c89844d9986051022192fcef6": 1,
+        "13ad1e2079144cfeaefa6d40bf57e79e": 7,
+        "189998ad7d3240d8bdf98e1192cc1003": 1,
+        "ebe4f0fa8722453ca1294bacc7302acc": 1,
+        "09952c2799c54b76904e264324ada8f3": 1
+      },
+      "BOM": [],
+      "updateTime": 1660101417,
+      "createTime": 1660079958,
+      "histories": [],
+      "created_at": "2022-08-09 18:19:18",
+      "updated_at": "2022-08-10 00:16:57"
+    }
+  ],
+  "sort": [],
+  "title": "RCCAR",
+  "foldername": "RCCAR",
+  "schfilename": "RCCAR.json",
+  "schfilemtime": 1660095485537
+}
