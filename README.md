@@ -20,7 +20,7 @@ Este projeto tem como justificativa desenvolver as abilidades pessoais do autor,
 
 ## Apoio
 <<<<<<< HEAD
-[![PcbWay](./media/PCBway logo.png)](pcbway.com)
+[![PcbWay](./media/PCBway-logo.png)](pcbway.com)
 =======
 [![PcbWay](./media/pcbway-logo.png)](https://www.pcbway.com)
 >>>>>>> 04b4285b69fe3c0d9c5067d92b79f3b5dc6a732e
