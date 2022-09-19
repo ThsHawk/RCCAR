@@ -19,4 +19,4 @@ Este projeto tem como justificativa desenvolver as abilidades pessoais do autor,
 ![Image](./media/Cronograma.jpg)
 
 ## Apoio
-[![PcbWay](./media/pcbway-logo.png)](pcbway.com)
+[![PcbWay](./media/PCBway logo.png)](pcbway.com)

@@ -39,17 +39,17 @@ void control(char * data){
   int thrust = atoi(pThrust);
   if(thrust > 0){
     thrust = thrust * 2 + 100;
-    analogWrite(D4, thrust);
+    analogWrite(12, thrust);
   }else if(thrust < 0){
     thrust = thrust * -2 + 100;
-    analogWrite(D3, thrust);
+    analogWrite(13, thrust);
   }else{
-    analogWrite(D4, 0);
-    analogWrite(D3, 0);
+    analogWrite(12, 0);
+    analogWrite(13, 0);
   }
 
   bool lights = atoi(pLights);
-  lights == 1 ? digitalWrite(D2, HIGH) : digitalWrite(D2, LOW);
+  lights == 1 ? digitalWrite(14, HIGH) : digitalWrite(14, LOW);
 
 }
 
@@ -79,9 +79,9 @@ const char *password = "senha_dificil";
 
 void setup(void){
 
-  servo.attach(D1, 500, 2400); //D1
+  servo.attach(16, 500, 2400); //D1
   servo.write(40);
-  pinMode(D2, OUTPUT);
+  pinMode(14, OUTPUT);
   
   Serial.begin(115200);
   Serial.print("\n");
