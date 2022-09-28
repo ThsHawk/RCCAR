@@ -20,3 +20,5 @@ Este projeto tem como justificativa desenvolver as abilidades pessoais do autor,
 
 ## Apoio
 [![PcbWay](./media/PCBway-logo.png)](https://pcbway.com)
+
+PCBWay é uma empresa fabricante de PCI, também atua na montagem de placas, impressão 3D, fresagem de peças e outros. Atende a uma variedade de especificações e padrões da indústria. Sua fabrica é localizada em Shenzhen China, possúi 3 grandes linhas de produção de PCI e duas linhas de montagem.
